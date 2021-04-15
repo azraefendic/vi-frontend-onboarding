@@ -261,3 +261,64 @@ textarea {
   }
 }
 
+header {
+  width: 100vw;
+  display: grid;
+  grid-column-gap: 2px;
+}
+
+.nav-in-header {
+  height: 3em;
+  background-color: yellow;
+}
+
+
+.headline {
+  height:10em;
+  background-color: orange;
+}
+
+main {
+  height: 60em;
+}
+
+.content-wrapper{
+  display: grid;
+  justify-content: center;
+}
+
+.nav-in-main-container {
+  height: 3em;
+  background-color: yellow;
+}
+
+.column-element-wrapper {
+  height: 50em;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-column {
+  width: 60vw;
+  background-color: orange;
+}
+
+aside {
+  width: 20vw;
+  background-color: salmon;
+}
+
+.teasers-wrapper {
+  width: 100vw;
+  height: 50em;
+  background-color: yellow;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 3em;
+  background-color: orange;
+}
