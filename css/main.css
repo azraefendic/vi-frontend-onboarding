@@ -293,25 +293,23 @@ main {
 }
 
 .column-element-wrapper {
-  height: 50em;
-  width: 80vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  height: max-content;
+  width: 100vw;
 }
 
 .first-column {
-  width: 60vw;
+  height: 40em;
   background-color: orange;
 }
 
 aside {
-  width: 20vw;
+  height: 40em;
   background-color: salmon;
 }
 
 .teasers-wrapper {
   width: 100vw;
-  height: 50em;
+  height: 40em;
   background-color: yellow;
 }
 
@@ -321,4 +319,17 @@ footer {
   width: 100vw;
   height: 3em;
   background-color: orange;
+}
+
+@media (min-width: 1200px) {
+
+  .column-element-wrapper {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  
+
 }
