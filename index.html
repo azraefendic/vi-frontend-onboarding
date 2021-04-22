@@ -16,6 +16,10 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -27,10 +31,31 @@
   <header>
     <nav class="nav-in-header">
 
+      <div class="search-container">
+        <input type="search" placeholder="Search">
+      </div>
+
+      <ul class="menubar">
+        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 1 Lorem</a></li>
+        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 2 ipsum</a></li>
+        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 3 dolor</a></li>
+        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 4 sit</a></li>
+        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 5 amet</a></li>
+      </ul>
+
     </nav>
-    <article class="headline">
-      <!-- Headline section -->
-    </article>
+    <section class="headline">
+       <!-- Headline section -->
+       <div class="headline-content">
+      <img class="small-headline-img" src="https://dummyimage.com/768x432/e0d0e0/fff" alt="Small headline image">
+      <img class="big-headline-img" src="https://dummyimage.com/1280x400/e0d0e0/fff" alt="Big headline image">
+      <section>
+        <h2>Headline</h2>
+        <p>Text</p>
+        <button type="button">no target</button>
+      </section>
+    </div>
+  </section>
   </header>
 
   <main class="main-container">
@@ -39,16 +64,49 @@
 
     <nav class="nav-in-main-container">
       <!-- In page navigation (Home...) -->
+        <ul class="main-nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Test Folder</a></li>
+          <li><a href="">Test</a></li>
+        </ul>
     </nav>
 
     <div class="column-element-wrapper">
 
       <section class="first-column">
         <!-- First column -->
+        <h1>Fundamentals I: Layout, Styling & Semantics</h1>
+        <div class="column-content">
+          <h2>Image section (Landscape, no caption)</h2>
+          <div class="image-section-content">
+          <img class="column-image" src="https://dummyimage.com/480X240/e0d0e0/fff" alt="Placeholder image">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus est pellentesque elit ullamcorper dignissim cras. Sem et tortor consequat id porta. Ornare arcu odio ut sem nulla pharetra diam sit amet. Condimentum id venenatis a condimentum vitae. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Nunc id cursus metus aliquam eleifend mi. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Odio pellentesque diam volutpat commodo sed egestas egestas. Donec ultrices tincidunt arcu non sodales. Diam quis enim lobortis scelerisque. Gravida rutrum quisque non tellus. Aenean et tortor at risus viverra adipiscing at in.</p>
+        </div>
+      </div>
+      
+
+      <section class="video-section">
+        <h2>Video section</h2>
+        <img class="video-image" src="https://dummyimage.com/1000X500/e0d0e0/fff" alt="Placeholder image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus est pellentesque elit ullamcorper dignissim cras. Sem et tortor consequat id porta. Ornare arcu odio ut sem nulla pharetra diam sit amet. Condimentum id venenatis a condimentum vitae. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Nunc id cursus metus aliquam eleifend mi. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Odio pellentesque diam volutpat commodo sed egestas egestas. Donec ultrices tincidunt arcu non sodales. Diam quis enim lobortis scelerisque. Gravida rutrum quisque non tellus. Aenean et tortor at risus viverra adipiscing at in.</p>
       </section>
+
+    </section>
 
       <aside>
         <!-- Side column -->
+        <section>
+          <h3>Subheadline lorem ipsum</h3>
+          <div class="aside-content">
+            <img src="https://dummyimage.com/100X150/e0d0e0/fff" alt="Contact image">
+            <div class="contact-info">
+              <strong>Contact No. 3, whose name is even a little bit longer, it will definitely cause a line break. In fact it is really really really long. Longer than anything else.</strong>
+              <div>Mock Contact Manager</div>
+                <p class="phone-contact">T +49 13 24 54657 <br>F +49 98 76 54321</p>
+              <a href="">→ Send E-Mail</a>
+            </div>
+          </div>
+        </section>
       </aside>
 
     </div>
@@ -62,6 +120,9 @@
 
   <footer>
     <!-- Footer content -->
+    <p>© 2018 Ninja Developers</p>
+    <a href="" >→ target same window</a>
+    <a href="" >→ target new window</a>
   </footer>
 
   <!-- Add your site or application content here -->
