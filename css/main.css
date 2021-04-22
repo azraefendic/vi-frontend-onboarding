@@ -385,6 +385,16 @@ a:hover {
     margin-right: 1vh;
   }
 
-  
+  .small-headline-img {
+    display:none;
+  }
 
+}
+
+@media (max-width: 1200px) {
+
+  .big-headline-img {
+    display: none;
+  }
+    
 }
