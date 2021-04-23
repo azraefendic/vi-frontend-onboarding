@@ -278,8 +278,7 @@ header {
   background-color: #fff176;
   display: flex;
   flex-direction: column;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding: 8px;
 }
 
 
@@ -378,17 +377,20 @@ footer {
 }
 
 .menubar{
-  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  margin-left: 2vw;
-  margin-top: 2vh;
+  flex-wrap: wrap;
 }
 
-li {
-  margin-right: 2vw;
+li, .menubar {
   list-style-type: none;
+  margin: 5px, 5px, 0, 5px;
+  margin-right: 10px;
+}
+
+li:last-child {
+  margin: 0;
 }
 
 a {
@@ -453,7 +455,7 @@ h1 {
   }
 
   .first-column {
-    margin-right: 1vh;
+    margin-right: 10px;
   }
 
   .small-headline-img {
@@ -482,6 +484,8 @@ h1 {
   footer > p, a {
     margin-right: 2vw;
   }
+
+
 
 }
 
