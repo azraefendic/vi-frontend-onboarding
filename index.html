@@ -47,8 +47,13 @@
     <section class="headline">
        <!-- Headline section -->
        <div class="headline-content">
-      <img class="small-headline-img" src="https://dummyimage.com/768x432/e0d0e0/fff" alt="Small headline image">
-      <img class="big-headline-img" src="https://dummyimage.com/1280x400/e0d0e0/fff" alt="Big headline image">
+      <!-- <img class="small-headline-img" src="https://dummyimage.com/768x432/e0d0e0/fff" alt="Small headline image">
+      <img class="big-headline-img" src="https://dummyimage.com/1280x400/e0d0e0/fff" alt="Big headline image"> -->
+      <picture>
+        <source media="(max-width: 767px)" srcset="https://dummyimage.com/768x432/e0d0e0/fff">
+        <source media="(max-width: 1280px)" srcset="https://dummyimage.com/1280x400/e0d0e0/fff">
+        <img src="https://dummyimage.com/1280x400/e0d0e0/fff" alt="Headline image">
+    </picture>
       <section class="headline-overlay">
         <h2>Headline</h2>
         <p>Text</p>
