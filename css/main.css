@@ -396,8 +396,8 @@ li:last-child {
 a {
   text-decoration: none;
   color: blue;
-
 }
+
 h2 {
   margin-top:0
 }
@@ -458,10 +458,6 @@ h1 {
     margin-right: 10px;
   }
 
-  .small-headline-img {
-    display:none;
-  }
-
   .headline-content {
     display: flex;
   }
@@ -486,13 +482,9 @@ h1 {
   }
 
 
-
 }
 
 @media (max-width: 1200px) {
 
-  .big-headline-img {
-    display: none;
-  }
 
 }
