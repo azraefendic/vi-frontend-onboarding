@@ -47,8 +47,6 @@
     <section class="headline">
        <!-- Headline section -->
        <div class="headline-content">
-      <!-- <img class="small-headline-img" src="https://dummyimage.com/768x432/e0d0e0/fff" alt="Small headline image">
-      <img class="big-headline-img" src="https://dummyimage.com/1280x400/e0d0e0/fff" alt="Big headline image"> -->
       <picture>
         <source media="(max-width: 767px)" srcset="https://dummyimage.com/768x432/e0d0e0/fff">
         <source media="(max-width: 1280px)" srcset="https://dummyimage.com/1280x400/e0d0e0/fff">
@@ -96,6 +94,93 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus est pellentesque elit ullamcorper dignissim cras. Sem et tortor consequat id porta. Ornare arcu odio ut sem nulla pharetra diam sit amet. Condimentum id venenatis a condimentum vitae. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Nunc id cursus metus aliquam eleifend mi. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Odio pellentesque diam volutpat commodo sed egestas egestas. Donec ultrices tincidunt arcu non sodales. Diam quis enim lobortis scelerisque. Gravida rutrum quisque non tellus. Aenean et tortor at risus viverra adipiscing at in.</p>
       </section>
 
+      <section class="copytext-section">
+        <h2>Copy text with all format types</h2>
+        <p>This is blind text. <strong>Bold text makes you pay attention. </strong> <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny.</p>
+        <ul>
+          <li class="bullet-list">Some</li>
+          <li class="bullet-list">Circles</li>
+        </ul>
+        <div class="ci-links">
+          <a href="">→ This link leads to the CI.</a>
+          <a href="">→ This link leads to the CI in a new window.</a>
+        </div>
+        <table style="width:100%">
+          <tr>
+            <th>Super Nice</th>
+            <th>Duper Table</th>
+          </tr>
+          <tr>
+            <td>Super</td>
+            <td>Duper</td>
+          </tr>
+          <tr>
+            <td>Nice</td>
+            <td>Table</td>
+            </tr>
+        </table>
+        <div class="quote">
+          <p>Someone once said inspiring stuff like this"</p>
+        </div>
+      </section>
+      <section class="form-section">
+        <h2>Form</h2>
+        <form>
+          <div class="input-field">
+            <label>Text</label>
+            <input type="text">
+          </div>
+          <div class="input-field">
+            <label>Text mandatory*</label>
+            <input type="text" required>
+          </div>
+          <div class="input-field">
+            <label>Number</label>
+            <input type="number">
+          </div>
+          <div class="input-field">
+            <label>Text Area</label>
+            <textarea class="textarea-input"></textarea>
+          </div>
+          <div class="input-field">
+            <p>checkbox</p>
+            <div class="check">
+              <input type="checkbox">
+              <label>yes</label>
+              <input type="checkbox">
+              <label>no</label>
+            </div>
+          </div>
+          <div class="input-field">
+            <p>radio</p>
+            <div class="check">
+              <input type="radio">
+              <label>yes</label>
+              <input type="radio">
+              <label>no</label>
+            </div>
+          </div>
+          <div class="input-field">
+          <p class="select">select box</p>
+          <select>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+          </div>
+          <div class="input-field">
+            <label>email field (mandatory)*</label>
+            <input type="email" required>
+          </div>
+          <div class="form-btn">
+            <div>
+              <button>Send</button>
+              <button>Cancel</button>
+            </div>
+            <p class="mandatory-dsc">All fields marked with an asterisk (*) are mandatory.</p>
+          </div>
+        </form>
+      </section>
+
     </section>
 
       <aside>
@@ -112,6 +197,10 @@
             </div>
           </div>
         </section>
+        <section>
+          <h3>All Document Types</h3>
+          
+        </section>
       </aside>
 
     </div>
@@ -119,6 +208,13 @@
 
     <section class="teasers-wrapper">
       <!-- Teasers content -->
+      <img class="teaser-image" src="https://dummyimage.com/1500X1000/e0d0e0/fff" alt="Teaser image">
+      <div class="teaserrow">
+          <h2>teaserrow with default teaser with image and link (new window)</h2>
+          <p>Set highlight for current Teaser [yes] > element-settings</p>
+          <a href="">→ open in new window</a>
+      </div>
+      
     </section>
    
   </main>
