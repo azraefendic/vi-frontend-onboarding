@@ -291,9 +291,7 @@ header {
 
 .headline-overlay {
   background-color: lightgreen;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-left: 2vw;
+  padding: 20px;
   color: white;
 }
 
@@ -316,7 +314,7 @@ main {
 
 .column-element-wrapper {
   height: max-content;
-  width: 100vw;
+  max-width: 1280px;
   margin-top: 0.6vh;
 }
 
@@ -328,8 +326,7 @@ main {
 
 aside {
   background-color: lightsalmon;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding: 20px
 }
 
 .aside-content {
@@ -345,7 +342,7 @@ aside {
 }
 
 .contact-info {
-  padding-left: 2vw;
+  padding-left: 20px;
 }
 
 .teasers-wrapper {
@@ -358,7 +355,7 @@ aside {
 footer {
   bottom: 0;
   margin-top: 1vh;
-  padding-left: 2vw;
+  padding-left: 20px;
   background-color: lightcoral;
   display: flex;
   align-items: center;
@@ -521,7 +518,7 @@ form {
   }
 
   .column-content p {
-    padding-left: 2vw;
+    padding-left: 20px;
     margin: 0;
   }
 
@@ -532,7 +529,7 @@ form {
   }
 
   footer > p, a {
-    margin-right: 2vw;
+    margin-right: 20px;
   }
 
   .teasers-wrapper {
