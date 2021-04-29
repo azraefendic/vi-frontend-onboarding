@@ -141,24 +141,38 @@
             <label>text Area</label>
             <textarea class="inputs" class="textarea-input"></textarea>
           </div>
+
+
           <div class="input-field">
             <p>checkbox</p>
             <div id="checkbox" class="check">
-              <input class="inputs" type="checkbox">
-              <label>yes</label>
-              <input class="inputs" type="checkbox">
-              <label>no</label>
+              <div>
+              <input class="inputs" type="checkbox" id="yes-check">
+              <label for="yes-check">yes</label>
+            </div>
+            <div>
+              <input class="inputs" type="checkbox" id="no-check">
+              <label for="no-check">no</label>
+            </div>
             </div>
           </div>
-          <div id="radio" class="input-field">
+
+
+          <div class="input-field">
             <p>radio</p>
-            <div class="check">
-              <input class="inputs" type="radio">
-              <label for="radio-yes">yes</label>
-              <input class="inputs" type="radio">
-              <label for="radio no">no</label>
+            <div id="radio" class="check">
+              <div>
+              <input class="inputs" type="radio" id="yes-radio">
+              <label for="yes-radio">yes</label>
+            </div>
+            <div>
+              <input class="inputs" type="radio" id="no-radio">
+              <label for="no-radio">no</label>
+            </div>
             </div>
           </div>
+
+
           <div class="input-field">
           <p class="select">select box</p>
           <select class="check">
@@ -283,12 +297,11 @@
 
         <div class="teaser-column">
           <h2>Test video</h2>
-
-          <iframe class="teaser-media" width="768" height="432"
-          src="video.mp4">
-          </iframe>
+          <video class="teaser-media" controls>
+            <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
           <div class="time-stamp">3:06</div>
-          
         </div> 
       </div>
       
