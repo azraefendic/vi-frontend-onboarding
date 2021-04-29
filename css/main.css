@@ -481,6 +481,17 @@ form {
    max-width: 90%;
  }
 
+ .svg-aside {
+   width: 60px;
+ }
+
+ .documents {
+   display: flex;
+ }
+ .file-info > h3, p {
+   margin: 0;
+ }
+
 
 
 
