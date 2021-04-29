@@ -138,25 +138,25 @@
             <input class="inputs" type="number">
           </div>
           <div class="input-field">
-            <label>Text Area</label>
+            <label>text Area</label>
             <textarea class="inputs" class="textarea-input"></textarea>
           </div>
           <div class="input-field">
             <p>checkbox</p>
-            <div class="check">
+            <div id="checkbox" class="check">
               <input type="checkbox">
               <label>yes</label>
               <input type="checkbox">
               <label>no</label>
             </div>
           </div>
-          <div class="input-field">
+          <div id="radio" class="input-field">
             <p>radio</p>
             <div class="check">
               <input type="radio">
-              <label>yes</label>
+              <label for="radio-yes">yes</label>
               <input type="radio">
-              <label>no</label>
+              <label for="radio no">no</label>
             </div>
           </div>
           <div class="input-field">
@@ -186,6 +186,7 @@
         <!-- Side column -->
         <section>
           <h3>Subheadline lorem ipsum</h3>
+          <hr>
           <div class="aside-content">
             <img src="https://dummyimage.com/100X150/e0d0e0/fff" alt="Contact image">
             <div class="contact-info">
@@ -193,11 +194,13 @@
               <div>Mock Contact Manager</div>
                 <p class="phone-contact">T +49 13 24 54657 <br>F +49 98 76 54321</p>
               <a href="">→ Send E-Mail</a>
+              <hr>
             </div>
           </div>
         </section>
         <section>
           <h3>All Document Types</h3>
+          <hr>
           
         </section>
       </aside>
@@ -207,11 +210,31 @@
 
     <section class="teasers-wrapper">
       <!-- Teasers content -->
-      <img class="teaser-image" src="https://dummyimage.com/1500X1000/e0d0e0/fff" alt="Teaser image">
       <div class="teaserrow">
+        <img class="teaser-media" src="https://dummyimage.com/1500X1000/e0d0e0/fff" alt="Teaser image">
+        <div class="teaser-one">
           <h2>teaserrow with default teaser with image and link (new window)</h2>
           <p>Set highlight for current Teaser [yes] > element-settings</p>
           <a href="">→ open in new window</a>
+        </div>
+      </div>
+
+      <div class="column-teasers">
+        <div class="teaser-column">
+            <h2>2 teaser</h2>
+            <img class="teaser-media" src="https://dummyimage.com/768X432/e0d0e0/fff" alt="Teaser image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit massa enim nec dui. Nunc congue nisi vitae suscipit tellus. Egestas tellus rutrum tellus pellentesque eu. Penatibus et magnis dis parturient. Amet nisl purus in mollis nunc sed id semper risus. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Mauris nunc congue nisi vitae suscipit. Mollis nunc sed id semper risus in. Sit amet purus gravida quis blandit turpis cursus in. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nec tincidunt praesent semper feugiat. Cras tincidunt lobortis feugiat vivamus. Amet facilisis magna etiam tempor orci. Praesent elementum facilisis leo vel fringilla est ullamcorper. Sit amet massa vitae tortor condimentum. Nibh tellus molestie nunc non blandit massa. Lobortis mattis aliquam faucibus purus in massa tempor. Purus sit amet volutpat consequat mauris nunc congue. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
+        </div>
+
+        <div class="teaser-column">
+          <h2>Test video</h2>
+
+          <iframe class="teaser-media" width="768" height="432"
+          src="video.mp4">
+          </iframe>
+          <div class="time-stamp">3:06</div>
+          
+        </div> 
       </div>
       
     </section>
