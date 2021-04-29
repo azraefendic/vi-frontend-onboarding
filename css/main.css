@@ -366,8 +366,7 @@ footer {
 .search-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: 1vh;
-  margin-right: 12vw;
+  margin: 5px 0 5px 0; 
 }
 
 .menubar{
@@ -379,7 +378,6 @@ footer {
 
 li, .menubar {
   list-style-type: none;
-  margin: 5px, 5px, 0, 5px;
   margin-right: 10px;
 }
 
@@ -459,11 +457,12 @@ form {
 }
  .input-field {
    display: flex;
+   flex-direction: column;
    padding-bottom: 10px;
  }
 
 .select, label {
-  margin-right: 10px;
+   margin-right: 10px;
  }
 
  .check {
@@ -484,25 +483,32 @@ form {
 
 @media (min-width: 1280px) {
 
+  .headline{
+    position: relative;
+  }
+
   .headline-overlay {
     background-color: lightgreen;
     position: absolute;
-    top: 20vh;
-    right: 20vw;
-    height: 20vh;
-    width: 25vw;
+    top: 100px;
+    right: 300px;
+    height: 220px;
+    width: 500px;
     opacity: 0.8;
   }
 
   .menubar {
-    margin-left: 12vw;
+    margin-left: 15vw;
+  }
+
+  .search-container {
+    margin-right: 15vw;
   }
 
   .column-element-wrapper {
     display: grid;
     grid-template-columns: 5fr 2fr;
     justify-content: center;
-    width: 80vw;
   }
 
   .first-column {
@@ -548,6 +554,27 @@ form {
 
   h2 {
     margin-top: 0;
+  }
+
+  .input-field {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-bottom: 10px;
+    width: max-content;
+  }
+
+  input, textarea, select {
+    width: 600px;
+    padding: 0;
+    border: 1px solid gray;;
+  }
+
+  .form-btn {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
 }
