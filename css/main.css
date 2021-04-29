@@ -457,11 +457,12 @@ form {
 }
  .input-field {
    display: flex;
+   flex-direction: column;
    padding-bottom: 10px;
  }
 
 .select, label {
-  margin-right: 10px;
+   margin-right: 10px;
  }
 
  .check {
@@ -476,6 +477,7 @@ form {
  .teaser-image {
    max-width: 90%;
  }
+
 
 
 
@@ -552,6 +554,27 @@ form {
 
   h2 {
     margin-top: 0;
+  }
+
+  .input-field {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-bottom: 10px;
+    width: max-content;
+  }
+
+  input, textarea, select {
+    width: 600px;
+    padding: 0;
+    border: 1px solid gray;;
+  }
+
+  .form-btn {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
 }
