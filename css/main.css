@@ -490,6 +490,10 @@ form {
    width: 60px;
  }
 
+ .svg-aside path {
+  fill: #000;
+}
+
  .documents {
    display: flex;
  }
@@ -501,9 +505,37 @@ form {
  }
 
 
+@media (min-width: 320px) {
 
 
-@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 480px) {
+
+
+
+}
+
+@media (min-width: 600px) {
+
+
+
+}
+
+@media (min-width: 768px) {
+
+
+
+}
+
+@media (min-width: 1600px) {
+
+
+
+}
+
+@media (min-width: 1024px) {
 
   .headline{
     position: relative;
@@ -631,11 +663,5 @@ form {
   footer > p, a {
     margin-right: 20px;
   }
-
-}
-
-@media (min-width: 768px) {
-
-
 
 }
