@@ -370,7 +370,7 @@ li, .menubar {
   margin-right: 10px;
 }
 
-li > a::before {
+.menubar > li > a::before {
   content: "";
 }
 
@@ -629,7 +629,7 @@ form {
     float: right;
   }
 
-  .teaser-media {‚
+  .teaser-media {
     max-height: 432px;
     margin: 0;
     padding: 0;
