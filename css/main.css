@@ -352,18 +352,6 @@ aside {
   background-color: #fff176;
 }
 
-footer {
-  bottom: 0;
-  margin-top: 10px;
-  padding-left: 20px;
-  background-color: lightcoral;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
-  height: auto;
-}
-
 .search-container {
   display: flex;
   justify-content: flex-end;
@@ -382,6 +370,10 @@ li, .menubar {
   margin-right: 10px;
 }
 
+li > a::before {
+  content: "";
+}
+
 li:last-child {
   margin: 0;
 }
@@ -389,6 +381,14 @@ li:last-child {
 a {
   text-decoration: none;
   color: blue;
+}
+
+a::before {
+  content: "→ ";
+}
+
+.after-arrow::after {
+  content: " →";
 }
 
 h2 {
@@ -486,7 +486,7 @@ form {
   max-width: -webkit-fill-available;
  }
 
- .svg-aside {
+ .svg-aside, .svg-teaser {
    width: 60px;
  }
 
@@ -504,6 +504,32 @@ form {
    color: green;
  }
 
+  
+ .video-teaser > p, h3 {
+  margin-top: 30px;
+}
+
+ .time-stamp {
+   margin-top:10px;
+   color: gray;
+   float: right;
+ }
+
+ .three-teaser-column {
+   margin-top: 40px;
+ }
+
+ footer {
+  bottom: 0;
+  margin-top: 10px;
+  padding-left: 20px;
+  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
 
 @media (min-width: 320px) {
 
@@ -587,8 +613,12 @@ form {
     height: max-content;
   }
 
+  .teaserrow > .teaser-media {
+    max-width: 50%;
+  }
+
   .teaser-column {
-    max-width: 800px;
+    width: 50%;
   }
 
   .teaser-column:last-child {
@@ -599,8 +629,7 @@ form {
     float: right;
   }
 
-  .teaser-media {
-    max-width: 650px;
+  .teaser-media {‚
     max-height: 432px;
     margin: 0;
     padding: 0;
@@ -651,7 +680,24 @@ form {
   .column-teasers {
     display: flex;
     margin-top: 20px;
+    width: 100%;
   }
+
+  .three-teasers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+ 
+  .three-teasers > article {
+    width: 33%;
+    padding-right: 30px;
+  }
+ 
+  .three-teasers > article:last-child {
+    padding-right: 0;
+  }
+
 
   footer {
     align-items: center;
