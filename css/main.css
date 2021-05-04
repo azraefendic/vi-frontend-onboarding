@@ -326,7 +326,7 @@ main {
 
 aside {
   background-color: lightsalmon;
-  padding: 20px
+  padding: 20px;
 }
 
 .aside-content {
@@ -387,6 +387,15 @@ a::before {
   content: "→ ";
 }
 
+#no-target {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: lightgray;
+  color: green;
+  border-style: hidden;
+}
+
 .after-arrow::after {
   content: " →";
 }
@@ -415,13 +424,24 @@ h1 {
   margin: 0;
 }
 
+.quote {
+  display: flex;
+  align-items: baseline;
+  padding: 15px 5px 15px 0;
+  font-size: 1.2em;
+}
+
+.svg-quote {
+  width: 30px;
+  margin-right: 20px;
+}
+
 .column-image {
   max-height: 240px;
-  max-width: 95%;
 }
 
 .video-image {
-  max-width: 95%;
+
 }
 
 .bullet-list {
@@ -436,6 +456,10 @@ ul {
 .ci-links {
   display: flex;
   flex-direction: column;
+}
+
+.ci-links > a {
+  padding-bottom: 10px;
 }
 
 table, th, td {
@@ -456,6 +480,18 @@ th {
 form {
   width: 100%;
 }
+
+.form-btn{
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 20px;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
  .input-field {
    display: flex;
    flex-direction: column;
@@ -533,7 +569,22 @@ form {
 
 @media (min-width: 320px) {
 
+.form-btn {
+  flex-direction: column;
+  align-items: baseline;
+}
 
+.image-section-content > p {
+  margin: 20px 0 20px 0;
+}
+
+.video-section > p {
+  margin: 20px 0 20px 0;
+}
+
+.teaser-column > p {
+  margin: 20px 0 20px 0;
+}
 
 }
 
@@ -546,7 +597,6 @@ form {
 @media (min-width: 600px) {
 
 
-
 }
 
 @media (min-width: 768px) {
@@ -557,7 +607,12 @@ form {
 
 @media (min-width: 1600px) {
 
+  .headline-overlay {
+  }
 
+  .headline-overlay > h2 {
+    padding: 20px 0 40px 0;
+  }
 
 }
 
@@ -601,6 +656,10 @@ form {
 
   .image-section-content {
     display: flex;
+  }
+  
+  .form-btn {
+    flex-direction: row;
   }
 
   .column-content p {
@@ -664,17 +723,6 @@ form {
 
   #checkbox, #radio {
     margin: 0;
-  }
-
-  .form-btn {
-    width: 900px;
-    margin-top: 10px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .column-teasers {
