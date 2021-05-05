@@ -270,14 +270,11 @@ body {
   align-items: stretch;
 }
 
-header {
-
-}
 
 .nav-in-header {
   background-color: #fff176;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding: 8px;
 }
 
@@ -346,20 +343,25 @@ aside {
 }
 
 .teasers-wrapper {
-  width: 100vw;
-  height: 100%;
   margin-top: 1vh;
   background-color: #fff176;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teasers {
+  max-width: 1280px;
 }
 
 .search-container {
   display: flex;
   justify-content: flex-end;
-  margin: 5px 0 5px 0; 
+  margin: 5px 10px 5px 0; 
 }
 
 .menubar{
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -587,13 +589,17 @@ form {
   height: auto;
 }
 
+.footer {
+  display: flex;
+}
+
 .choice {
   margin-top: 10px;
 }
 
 @media (min-width: 320px) {
 
-  .form-btn {
+.form-btn {
   flex-direction: column;
   align-items: baseline;
 }
@@ -609,6 +615,7 @@ form {
 .teaser-column > p {
   margin: 20px 0 20px 0;
 }
+
 
 }
 
@@ -627,6 +634,10 @@ form {
 
   .radio, .select {
     margin-top: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
   }
  
 
@@ -664,11 +675,10 @@ form {
   }
 
   .menubar {
-    margin-left: 15vw;
+
   }
 
   .search-container {
-    margin-right: 15vw;
   }
 
   .column-element-wrapper {
@@ -699,7 +709,6 @@ form {
   }
 
   .teasers-wrapper {
-    padding: 4vh 14vw 4vh 14vw;
     height: max-content;
   }
 
@@ -782,13 +791,17 @@ form {
 
   footer {
     align-items: center;
+    justify-content: center;
     flex-direction: row;
-    padding-left: 12vw;
     height: 60px;
   }
 
-  footer > p, a {
+  .footer > p, a {
     margin-right: 20px;
+  }
+
+  .header, .footer {
+    width: 1280px;
   }
 
 }
