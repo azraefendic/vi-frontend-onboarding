@@ -127,20 +127,20 @@
         <h2>Form</h2>
         <form>
           <div class="input-field">
-            <label>Text</label>
+            <label for="text-input">Text</label>
             <input class="inputs" type="text">
           </div>
           <div class="input-field">
-            <label>Text mandatory*</label>
+            <label for="mandatory-input">Text mandatory*</label>
             <input class="inputs" type="text" required>
           </div>
           <div class="input-field">
-            <label>Number</label>
+            <label for="number-input">Number</label>
             <input class="inputs" type="number">
           </div>
           <div class="input-field">
-            <label>text Area</label>
-            <textarea class="inputs" class="textarea-input"></textarea>
+            <label for="textarea-input">text Area</label>
+            <textarea class="inputs" id="textarea-input"></textarea>
           </div>
 
 
@@ -148,33 +148,33 @@
             <p>checkbox</p>
             <div id="checkbox" class="check">
               <div>
-              <input class="inputs" type="checkbox" id="yes-check">
+              <input class="inputs1" type="checkbox" id="yes-check">
               <label for="yes-check">yes</label>
             </div>
             <div>
-              <input class="inputs" type="checkbox" id="no-check">
+              <input class="inputs1" type="checkbox" id="no-check">
               <label for="no-check">no</label>
             </div>
             </div>
           </div>
 
 
-          <div class="input-field">
-            <p>radio</p>
+          <div class="input-field choice">
+            <p class="radio">radio</p>
             <div id="radio" class="check">
               <div>
-              <input class="inputs" type="radio" id="yes-radio">
+              <input class="inputs1" type="radio" id="yes-radio">
               <label for="yes-radio">yes</label>
             </div>
             <div>
-              <input class="inputs" type="radio" id="no-radio">
+              <input class="inputs1" type="radio" id="no-radio">
               <label for="no-radio">no</label>
             </div>
             </div>
           </div>
 
 
-          <div class="input-field">
+          <div class="input-field choice">
           <p class="select">select box</p>
           <select class="check">
             <option value="yes">yes</option>
@@ -182,13 +182,13 @@
           </select>
           </div>
           <div class="input-field">
-            <label>email field (mandatory)*</label>
+            <label for="email-input">email field (mandatory)*</label>
             <input class="inputs" type="email" required>
           </div>
           <div class="form-btn">
             <div>
-              <button type="submit">Send</button>
-              <button type="reset">Cancel</button>
+              <button class="send" type="submit">Send</button>
+              <button class="cancel" type="reset">Cancel</button>
             </div>
             <p class="mandatory-dsc">All fields marked with an asterisk (*) are mandatory.</p>
           </div>
