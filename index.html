@@ -30,11 +30,10 @@
 
   <header>
     <nav class="nav-in-header">
-
+      <div class="header">
       <div class="search-container">
         <input type="search" placeholder="Search">
       </div>
-
       <ul class="menubar">
         <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 1 Lorem</a></li>
         <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 2 ipsum</a></li>
@@ -42,7 +41,7 @@
         <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 4 sit</a></li>
         <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 5 amet</a></li>
       </ul>
-
+    </div>
     </nav>
     <section class="headline">
        <!-- Headline section -->
@@ -127,20 +126,20 @@
         <h2>Form</h2>
         <form>
           <div class="input-field">
-            <label>Text</label>
+            <label for="text-input">Text</label>
             <input class="inputs" type="text">
           </div>
           <div class="input-field">
-            <label>Text mandatory*</label>
+            <label for="mandatory-input">Text mandatory*</label>
             <input class="inputs" type="text" required>
           </div>
           <div class="input-field">
-            <label>Number</label>
+            <label for="number-input">Number</label>
             <input class="inputs" type="number">
           </div>
           <div class="input-field">
-            <label>text Area</label>
-            <textarea class="inputs" class="textarea-input"></textarea>
+            <label for="textarea-input">text Area</label>
+            <textarea class="inputs" id="textarea-input"></textarea>
           </div>
 
 
@@ -148,33 +147,33 @@
             <p>checkbox</p>
             <div id="checkbox" class="check">
               <div>
-              <input class="inputs" type="checkbox" id="yes-check">
+              <input class="inputs1" type="checkbox" id="yes-check">
               <label for="yes-check">yes</label>
             </div>
             <div>
-              <input class="inputs" type="checkbox" id="no-check">
+              <input class="inputs1" type="checkbox" id="no-check">
               <label for="no-check">no</label>
             </div>
             </div>
           </div>
 
 
-          <div class="input-field">
-            <p>radio</p>
+          <div class="input-field choice">
+            <p class="radio">radio</p>
             <div id="radio" class="check">
               <div>
-              <input class="inputs" type="radio" id="yes-radio">
+              <input class="inputs1" type="radio" id="yes-radio">
               <label for="yes-radio">yes</label>
             </div>
             <div>
-              <input class="inputs" type="radio" id="no-radio">
+              <input class="inputs1" type="radio" id="no-radio">
               <label for="no-radio">no</label>
             </div>
             </div>
           </div>
 
 
-          <div class="input-field">
+          <div class="input-field choice">
           <p class="select">select box</p>
           <select class="check">
             <option value="yes">yes</option>
@@ -182,13 +181,13 @@
           </select>
           </div>
           <div class="input-field">
-            <label>email field (mandatory)*</label>
+            <label for="email-input">email field (mandatory)*</label>
             <input class="inputs" type="email" required>
           </div>
           <div class="form-btn">
             <div>
-              <button type="submit">Send</button>
-              <button type="reset">Cancel</button>
+              <button class="send" type="submit">Send</button>
+              <button class="cancel" type="reset">Cancel</button>
             </div>
             <p class="mandatory-dsc">All fields marked with an asterisk (*) are mandatory.</p>
           </div>
@@ -279,6 +278,7 @@
   </div>
 
     <section class="teasers-wrapper">
+      <div class="teasers">
       <!-- Teasers content -->
       <div class="teaserrow">
         <img class="teaser-media" src="https://dummyimage.com/1500X1000/e0d0e0/fff" alt="Teaser image">
@@ -341,16 +341,18 @@
         </div>
 
       </div>
-      
+     </div>
     </section>
    
   </main>
 
   <footer>
     <!-- Footer content -->
+    <div class="footer">
     <p>© 2018 Ninja Developers</p>
     <a href="" >target same window</a>
     <a href="" >target new window</a>
+  </div>
   </footer>
 
   <!-- Add your site or application content here -->
