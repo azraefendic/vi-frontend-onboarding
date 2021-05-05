@@ -270,7 +270,6 @@ body {
   align-items: stretch;
 }
 
-
 .nav-in-header {
   background-color: #fff176;
   display: flex;
@@ -278,6 +277,13 @@ body {
   padding: 8px;
 }
 
+.search-container > input {
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border: 5px solid white;
+  border-radius: 10px;
+}
 
 .headline {
   margin-top: 1vh;
@@ -290,9 +296,7 @@ body {
   background-color: lightgreen;
   padding: 20px;
   color: white;
-}
-
-main {
+  opacity: 0.8;
 }
 
  img {
@@ -310,7 +314,6 @@ main {
 }
 
 .column-element-wrapper {
-  height: max-content;
   max-width: 1280px;
   margin-top: 0.6vh;
 }
@@ -318,7 +321,6 @@ main {
 .first-column {
   background-color: lightcoral;
   padding: 20px;
-  object-fit: cover;
 }
 
 aside {
@@ -394,7 +396,7 @@ a::before {
   margin-top: 20px;
   width: 100px;
   height: 30px;
-  background-color: lightgray;
+  background-color: white;
   color: green;
   border-style: hidden;
 }
@@ -444,10 +446,6 @@ h1 {
   max-height: 240px;
 }
 
-.video-image {
-
-}
-
 .bullet-list {
   list-style-type: disc;
 }
@@ -490,22 +488,25 @@ form {
   width: 100%;
   margin-top: 10px;
   padding-top: 20px;
-  float: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.send {
+.send, .cancel {
   color: white;
-  background-color: green;
   padding: 5px;
+  border: none;
+  height: 32px;
+}
+
+.send {
+  background-color: green;
+  margin-right: 5px;
 }
 
 .cancel {
-  color: white;
   background-color: gray;
-  padding: 5px;
 }
 
  .input-field {
@@ -557,17 +558,14 @@ form {
  .documents {
    display: flex;
  }
+
  .file-info > h3, p {
    margin: 0;
  }
+
  .file-info > h3 {
    color: green;
  }
-
-  
- .video-teaser > p, h3 {
-  margin-top: 30px;
-}
 
  .time-stamp {
    margin-top:10px;
@@ -588,7 +586,6 @@ form {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  height: auto;
 }
 
 .footer {
@@ -618,21 +615,38 @@ form {
   margin: 20px 0 20px 0;
 }
 
+.mandatory-dsc {
+  margin-top: 10px;
+}
+
+footer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
 }
 
 @media (min-width: 480px) {
 
-
-
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 
+  .header {
+    width: 1280px;
+  }
+
+  .headline-overlay > h2 {
+    padding: 20px 0 40px 0;
+  }
 
 }
 
 @media (max-width: 768px) {
+
+  .header {
+    width: 768px;
+  }
 
   .radio, .select {
     margin-top: 10px;
@@ -641,47 +655,12 @@ form {
   .footer {
     flex-direction: column;
   }
- 
 
 }
 
-@media (min-width: 1600px) {
-
-  .headline-overlay {
-  }
-
-  .headline-overlay > h2 {
-    padding: 20px 0 40px 0;
-  }
-
-  .check {
-    padding-top: 0;
-  }
-
-}
 
 @media (min-width: 1024px) {
 
-  .headline{
-    position: relative;
-  }
-
-  .headline-overlay {
-    background-color: lightgreen;
-    position: absolute;
-    top: 100px;
-    right: 300px;
-    height: 220px;
-    width: 500px;
-    opacity: 0.8;
-  }
-
-  .menubar {
-
-  }
-
-  .search-container {
-  }
 
   .column-element-wrapper {
     display: grid;
@@ -694,8 +673,19 @@ form {
   }
 
   .headline-content {
+    position: relative;
     display: flex;
+    max-width: 1280px;
   }
+
+  .headline-overlay {
+    position: absolute;
+    top: 65px;
+    right: 100px;
+    height: 220px;
+    width: 450px;
+  }
+
 
   .image-section-content {
     display: flex;
@@ -710,10 +700,6 @@ form {
     margin: 0;
   }
 
-  .teasers-wrapper {
-    height: max-content;
-  }
-
   .teaserrow > .teaser-media {
     max-width: 50%;
   }
@@ -724,10 +710,6 @@ form {
 
   .teaser-column:last-child {
     padding-left: 20px;
-  }
-
-  .time-stamp {
-    float: right;
   }
 
   .teaser-media {
@@ -752,7 +734,6 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    float: right;
     width: 100%;
   }
 
@@ -790,12 +771,11 @@ form {
     padding-right: 0;
   }
 
-
   footer {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 60px;
+    height: 40px;
   }
 
   .footer > p, a {
@@ -804,6 +784,19 @@ form {
 
   .header, .footer {
     width: 1280px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+
+@media (min-width: 1600px) {
+
+  .check {
+    padding-top: 0;
   }
 
 }
