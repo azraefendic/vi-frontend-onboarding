@@ -386,7 +386,8 @@ a {
 }
 
 a::before {
-  content: "→ ";
+  content: "→";
+  margin-right: 5px;
 }
 
 #no-target {
@@ -399,7 +400,8 @@ a::before {
 }
 
 .after-arrow::after {
-  content: " →";
+  content: "→";
+  margin-left: 5px;
 }
 
 h2 {
