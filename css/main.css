@@ -278,9 +278,14 @@ body {
 
 .search-container > input {
   background: #ede6ed url(../img/search.svg) no-repeat right;
-  border: 4px solid #ede6ed;
+  border: 5px solid #ede6ed;
   border-radius: 10px;
-  color: white;
+  color: black;
+  font-size: 0.9em;
+}
+
+.search-container > input:focus {
+  background-image: none;
 }
 
 .headline {
@@ -340,6 +345,11 @@ svg {
 
 .phone-contact {
   margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.doc-types > h3 {
+  margin-top: 40px;
 }
 
 .contact-info {
@@ -408,12 +418,7 @@ a::before {
 }
 
 h2 {
-  margin-top: 0;
   padding: 5px 0 5px 0;
-}
-
-h3 {
-  margin-top: 1vh;
 }
 
 a:hover {
@@ -433,6 +438,11 @@ a:hover {
 
 h1 {
   margin: 0;
+}
+
+.copytext-section > h2, .form-section > h2 {
+  font-weight: 100;
+  font-size: 30px;
 }
 
 .quote {
@@ -575,6 +585,10 @@ form {
  .file-info > h3 {
    color: #019dd3;
  }
+
+ .test-vid {
+  margin-top: 30px;
+  }
 
  .time-stamp {
    margin-top:10px;
@@ -738,15 +752,6 @@ footer {
 
   .teaser-one {
     margin-left: 20px;
-  }
-
-  .test-vid {
-    margin-top: 30px;
-    }
-
-
-  h2 {
-    margin-top: 0;
   }
 
   .input-field {
