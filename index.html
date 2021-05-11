@@ -35,11 +35,11 @@
         <input type="search" placeholder="Search">
       </div>
       <ul class="menubar">
-        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 1 Lorem</a></li>
-        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 2 ipsum</a></li>
-        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 3 dolor</a></li>
-        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 4 sit</a></li>
-        <li><a href="https://dev-fe-onboarding.virtual-identity.com/#/fundamentals-1">Link 5 amet</a></li>
+        <li><a href="#fundamentals">Link 1 Lorem</a></li>
+        <li><a href="#copytext">Link 2 ipsum</a></li>
+        <li><a href="#form">Link 3 dolor</a></li>
+        <li><a href="#subheadline">Link 4 sit</a></li>
+        <li><a href="#teasers">Link 5 amet</a></li>
       </ul>
     </div>
     </nav>
@@ -75,7 +75,7 @@
 
     <div class="column-element-wrapper">
 
-      <section class="first-column">
+      <section class="first-column" id="fundamentals">
         <!-- First column -->
         <h1>Fundamentals I: Layout, Styling & Semantics</h1>
         <div class="column-content">
@@ -92,7 +92,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus est pellentesque elit ullamcorper dignissim cras. Sem et tortor consequat id porta. Ornare arcu odio ut sem nulla pharetra diam sit amet. Condimentum id venenatis a condimentum vitae. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Nunc id cursus metus aliquam eleifend mi. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Odio pellentesque diam volutpat commodo sed egestas egestas. Donec ultrices tincidunt arcu non sodales. Diam quis enim lobortis scelerisque. Gravida rutrum quisque non tellus. Aenean et tortor at risus viverra adipiscing at in.</p>
       </section>
 
-      <section class="copytext-section">
+      <section class="copytext-section" id="copytext">
         <h2>Copy text with all format types</h2>
         <p>This is blind text. <strong>Bold text makes you pay attention. </strong> <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny.</p>
         <ul>
@@ -118,11 +118,13 @@
             </tr>
         </table>
         <div class="quote">
-          <img class="svg-quote" src="img/quote.svg" alt="Quote svg">
+          <svg class="svg-quote">
+            <use xlink:href="img/symbol-defs.svg#icon-quotes-left"></use>
+          </svg>
           <p>Someone once said inspiring stuff like this"</p>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form-section" id="form">
         <h2>Form</h2>
         <form>
           <div class="input-field">
@@ -198,7 +200,7 @@
 
       <aside>
         <!-- Side column -->
-        <section>
+        <section id="subheadline">
           <h3>Subheadline lorem ipsum</h3>
           <hr>
           <div class="aside-content">
@@ -216,7 +218,9 @@
           <h3>All Document Types</h3>
           <hr>
           <div class="documents">
-            <img class="svg-aside" src="img/pdf.svg" alt="PDF svg">
+            <svg class="svg-aside">
+              <use xlink:href="img/symbol-defs.svg#icon-file-pdf"></use>
+            </svg>
             <div class="file-info">
               <h3>PDF - Title</h3>
               <p>Mar 07, 2017 | PDF | 88 kb</p>
@@ -224,7 +228,9 @@
           </div>
           <hr>
           <div class="documents">
-            <img class="svg-aside" src="img/image.svg" alt="Image svg">
+            <svg class="svg-aside">
+              <use xlink:href="img/symbol-defs.svg#icon-file-picture"></use>
+            </svg>
             <div class="file-info">
               <h3>Image (JPG, GIF, EPS) - Title</h3>
               <p>Mar 19, 2015 | JPG | 1.49 mb</p>
@@ -232,7 +238,9 @@
           </div>
           <hr>
           <div class="documents">
-            <img class="svg-aside" src="img/zip.svg" alt="Zip svg">
+            <svg class="svg-aside">
+              <use xlink:href="img/symbol-defs.svg#icon-file-zip"></use>
+            </svg>
             <div class="file-info">
               <h3>Zip - Download</h3>
               <p>Aug 03, 2009 | ZIP | 566 kb</p>
@@ -240,7 +248,9 @@
           </div>
           <hr>
           <div class="documents">
-            <img class="svg-aside" src="img/word.svg" alt="Word svg">
+            <svg class="svg-aside">
+              <use xlink:href="img/symbol-defs.svg#icon-file-word"></use>
+            </svg>
             <div class="file-info">
               <h3>Word - Document Title</h3>
               <p>Mar 07, 2017 | DOC | 80 kb</p>
@@ -248,7 +258,9 @@
           </div>
           <hr>
           <div class="documents">
-            <img class="svg-aside" src="img/excel.svg" alt="Excel svg">
+            <svg class="svg-aside">
+              <use xlink:href="img/symbol-defs.svg#icon-file-excel"></use>
+            </svg>
             <div class="file-info">
               <h3>Excel - Document Title</h3>
               <p>Sep 29, 2014 | XLSX | 169 kb</p>
@@ -256,7 +268,9 @@
           </div>
           <hr>
           <div class="documents">
-            <img class="svg-aside" src="img/video.svg" alt="Video svg">
+            <svg class="svg-aside">
+              <use xlink:href="img/symbol-defs.svg#icon-file-video"></use>
+            </svg>
             <div class="file-info">
               <h3>Video - Title</h3>
               <p>Jan 31, 2011 | MP4 | 254 mb</p>
@@ -264,7 +278,9 @@
           </div>
           <hr>
           <div class="documents">
-            <img class="svg-aside" src="img/other.svg" alt="Other svg">
+            <svg class="svg-aside">
+              <use xlink:href="img/symbol-defs.svg#icon-file-empty"></use>
+            </svg>
             <div class="file-info">
               <h3>Other - Document Title</h3>
               <p>Jun 12, 2007 | MDI | 127 kb</p>
@@ -277,7 +293,7 @@
     </div>
   </div>
 
-    <section class="teasers-wrapper">
+    <section class="teasers-wrapper" id="teasers">
       <div class="teasers">
       <!-- Teasers content -->
       <div class="teaserrow">
@@ -320,7 +336,7 @@
                 <div class="time-stamp">3:06</div>
               </div>
           </div>
-            <p>this is a test video</p>
+            <p class="test-vid">this is a test video</p>
           </article>
           <article>
             <h3>default teaser with text</h3>
@@ -330,7 +346,9 @@
             <h3>Document list</h3>
             <hr>
             <div class="documents">
-                <img class="svg-teaser" src="img/pdf.svg" alt="PDF svg">
+                <svg class="svg-teaser">
+                  <use xlink:href="img/symbol-defs.svg#icon-file-pdf"></use>
+                </svg>
                 <div class="file-info">
                   <h3>PDF - Title</h3>
                   <p>Mar 07, 2017 | PDF | 88 kb</p>

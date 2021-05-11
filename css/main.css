@@ -327,6 +327,13 @@ aside {
   display: flex;
 }
 
+svg {
+  width: 60px;
+  height: 60px;
+  fill: #bcbcc4;
+  margin-right: 10px;
+}
+
 .aside-content > img {
   max-height: 150px;
 }
@@ -410,7 +417,6 @@ h3 {
 }
 
 a:hover {
-  text-decoration: underline;
   color: blue;
 }
 
@@ -437,8 +443,8 @@ h1 {
 }
 
 .svg-quote {
-  width: 30px;
-  margin-right: 20px;
+  height: 40px;
+  fill: black;
 }
 
 .column-image {
@@ -548,10 +554,6 @@ form {
 
  video {
   max-width: -webkit-fill-available;
- }
-
- .svg-aside, .svg-teaser {
-   width: 60px;
  }
 
  .svg-aside path {
@@ -737,6 +739,11 @@ footer {
   .teaser-one {
     margin-left: 20px;
   }
+
+  .test-vid {
+    margin-top: 30px;
+    }
+
 
   h2 {
     margin-top: 0;
