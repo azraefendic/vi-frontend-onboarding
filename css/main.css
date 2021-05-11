@@ -271,7 +271,6 @@ body {
 }
 
 .nav-in-header {
-  background-color: #fff176;
   display: flex;
   justify-content: center;
   padding: 8px;
@@ -281,19 +280,21 @@ body {
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   background-position-x: right;
-  border: 5px solid white;
+  border: 4px solid #ede6ed;
+  background-color: #ede6ed;
   border-radius: 10px;
+  color: white;
 }
 
 .headline {
   margin-top: 1vh;
   display: flex;
   justify-content: center;
-  background-color: lightcoral;
+  background-color: #019dd3;
 }
 
 .headline-overlay {
-  background-color: lightgreen;
+  background-color: #019dd3;
   padding: 20px;
   color: white;
   opacity: 0.8;
@@ -310,7 +311,6 @@ body {
 
 .nav-in-main-container {
   margin-top: 1vh;
-  background-color: #fff176;
 }
 
 .column-element-wrapper {
@@ -319,12 +319,10 @@ body {
 }
 
 .first-column {
-  background-color: lightcoral;
   padding: 20px;
 }
 
 aside {
-  background-color: lightsalmon;
   padding: 20px;
 }
 
@@ -346,7 +344,6 @@ aside {
 
 .teasers-wrapper {
   margin-top: 1vh;
-  background-color: #fff176;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +381,7 @@ li:last-child {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: #019dd3;
 }
 
 a::before {
@@ -397,7 +394,7 @@ a::before {
   width: 100px;
   height: 30px;
   background-color: white;
-  color: green;
+  color: #019dd3;
   border-style: hidden;
 }
 
@@ -417,13 +414,17 @@ h3 {
 
 a:hover {
   text-decoration: underline;
-  color: darkblue;
+  color: blue;
 }
 
 .main-nav {
   list-style-type: none;
   text-decoration: none;
   display: flex;
+}
+
+.main-nav :last-child {
+  margin: 0;
 }
 
 h1 {
@@ -464,6 +465,10 @@ ul {
   padding-bottom: 10px;
 }
 
+table {
+  width: 100%;
+}
+
 table, th, td {
   border: 1px solid gray;
   border-spacing: 0;
@@ -476,7 +481,7 @@ th, td {
 th {
   text-align: left;
   color: white;
-  background-color: green;
+  background-color: #019dd3;
 }
 
 form {
@@ -501,12 +506,12 @@ form {
 }
 
 .send {
-  background-color: green;
+  background-color: #019dd3;
   margin-right: 5px;
 }
 
 .cancel {
-  background-color: gray;
+  background-color: #d3cdce;
 }
 
  .input-field {
@@ -563,8 +568,12 @@ form {
    margin: 0;
  }
 
+ .file-info > p {
+   color: #bcbcc4;
+ }
+
  .file-info > h3 {
-   color: green;
+   color: #019dd3;
  }
 
  .time-stamp {
@@ -581,7 +590,8 @@ form {
   bottom: 0;
   margin-top: 10px;
   padding-left: 20px;
-  background-color: lightcoral;
+  background-color: #4a5259;
+  color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -590,6 +600,10 @@ form {
 
 .footer {
   display: flex;
+}
+
+.footer > a {
+  color: white;
 }
 
 .choice {
