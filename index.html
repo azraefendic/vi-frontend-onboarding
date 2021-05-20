@@ -29,17 +29,17 @@
 <body>
 
   <header>
-    <nav class="nav-in-header">
+    <nav class="nav-in-header" role="navigation">
       <div class="header">
       <div class="search-container">
-        <input type="search" placeholder="Search">
+        <input type="search" placeholder="Search" role="search">
       </div>
-      <ul class="menubar">
-        <li><a href="#fundamentals">Link 1 Lorem</a></li>
-        <li><a href="#copytext">Link 2 ipsum</a></li>
-        <li><a href="#form">Link 3 dolor</a></li>
-        <li><a href="#subheadline">Link 4 sit</a></li>
-        <li><a href="#teasers">Link 5 amet</a></li>
+      <ul class="menubar" role="menubar">
+        <li role="menuitem"><a href="#fundamentals">Link 1 Lorem</a></li>
+        <li role="menuitem"><a href="#copytext">Link 2 ipsum</a></li>
+        <li role="menuitem"><a href="#form">Link 3 dolor</a></li>
+        <li role="menuitem"><a href="#subheadline">Link 4 sit</a></li>
+        <li role="menuitem"><a href="#teasers">Link 5 amet</a></li>
       </ul>
     </div>
     </nav>
@@ -54,7 +54,7 @@
       <section class="headline-overlay">
         <h2>Headline</h2>
         <p>Text</p>
-        <button class="after-arrow" type="button" id="no-target">no target</button>
+        <button role="button" class="after-arrow" type="button" id="no-target">no target</button>
       </section>
     </div>
   </section>
@@ -66,10 +66,10 @@
 
     <nav class="nav-in-main-container">
       <!-- In page navigation (Home...) -->
-        <ul class="main-nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Test Folder</a></li>
-          <li><a class="test-nav" href="">Test</a></li>
+        <ul role="menubar" class="main-nav">
+          <li role="menuitem"><a href="">Home</a></li>
+          <li role="menuitem"><a href="">Test Folder</a></li>
+          <li role="menuitem"><a tabindex="0" class="test-nav" href="">Test</a></li>
         </ul>
     </nav>
 
@@ -133,7 +133,7 @@
           </div>
           <div class="input-field">
             <label for="mandatory-input">Text mandatory*</label>
-            <input class="inputs" type="text" required>
+            <input aria-required="true" class="inputs" type="text" required>
           </div>
           <div class="input-field">
             <label for="number-input">Number</label>
@@ -184,12 +184,12 @@
           </div>
           <div class="input-field">
             <label for="email-input">email field (mandatory)*</label>
-            <input class="inputs" type="email" required>
+            <input aria-required="true" class="inputs" type="email" required>
           </div>
           <div class="form-btn">
             <div>
-              <button class="send" type="submit">Send</button>
-              <button class="cancel" type="reset">Cancel</button>
+              <button role="button" class="send" type="submit">Send</button>
+              <button role="button" class="cancel" type="reset">Cancel</button>
             </div>
             <p class="mandatory-dsc">All fields marked with an asterisk (*) are mandatory.</p>
           </div>
